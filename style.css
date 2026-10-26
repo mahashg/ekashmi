@@ -66,6 +66,20 @@ blockquote{margin:22px 0;padding:14px 18px;border-left:3px solid var(--gold);bac
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
 .contact-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:grid;gap:4px;color:var(--ink)}
 .contact-card span{color:var(--muted);font-size:14px;word-break:break-word}
+.quick-links{display:flex;gap:18px;flex-wrap:wrap;font-size:15px;font-weight:700;margin:6px 0 10px}
+.work-auth{background:#eef6e6;border:1px solid #d3e4bd;color:#3c5a1e;padding:11px 14px;border-radius:10px;font-size:14.5px;font-weight:600;max-width:56ch}
+.pub-meta{color:var(--muted);margin:3px 0 0;font-size:14.5px}
+.pub-title a{color:var(--ink)}
+.pub-title a:hover{color:var(--plum-2)}
+/* Experience timeline */
+.exp-timeline{position:relative;margin-top:26px;padding-left:118px}
+.exp-timeline::before{content:"";position:absolute;left:96px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--gold),var(--plum-2))}
+.exp-item{position:relative;margin-bottom:20px}
+.exp-item::before{content:"";position:absolute;left:-29px;top:26px;width:13px;height:13px;border-radius:50%;background:var(--gold);border:3px solid var(--plum);box-shadow:0 0 0 4px var(--bg)}
+.exp-year{position:absolute;left:-118px;top:20px;width:78px;text-align:right;font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:17px;color:var(--plum)}
+.exp-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 6px 18px rgba(74,35,90,.05)}
+.exp-card.compact{padding:20px 24px}
+.exp-card ul{margin:8px 0;padding-left:20px}
 footer{max-width:1120px;margin:0 auto;padding:28px 22px 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 @media (max-width:860px){
   h1{font-size:34px}
@@ -74,5 +88,11 @@ footer{max-width:1120px;margin:0 auto;padding:28px 22px 40px;color:var(--muted);
   .timeline-item{grid-template-columns:1fr;gap:4px}
   .site-header{flex-direction:column;align-items:flex-start;gap:10px}
   nav{gap:14px}
+}
+@media (max-width:700px){
+  .exp-timeline{padding-left:26px}
+  .exp-timeline::before{left:6px}
+  .exp-item::before{left:-27px;top:30px}
+  .exp-year{position:static;width:auto;text-align:left;margin:0 0 6px;font-size:15px}
 }
 @media (max-width:520px){.stats{grid-template-columns:1fr}}
