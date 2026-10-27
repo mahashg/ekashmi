@@ -90,6 +90,9 @@ blockquote{margin:22px 0;padding:14px 18px;border-left:3px solid var(--gold);bac
 .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video-caption{color:var(--muted);font-size:14.5px;margin:12px auto 0;max-width:680px}
 footer{max-width:1120px;margin:0 auto;padding:28px 22px 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+section[id]{scroll-margin-top:84px}
+img,iframe{max-width:100%}
+.pub-list a{overflow-wrap:break-word}
 @media (max-width:860px){
   h1{font-size:34px}
   .hero,.profile-main,.two-col,.cards,.contact-grid{grid-template-columns:1fr}
@@ -98,11 +101,42 @@ footer{max-width:1120px;margin:0 auto;padding:28px 22px 40px;color:var(--muted);
   .timeline-item{grid-template-columns:1fr;gap:4px}
   .site-header{flex-direction:column;align-items:flex-start;gap:10px}
   nav{gap:14px}
+  .hero-photo{max-width:420px}
 }
 @media (max-width:700px){
   .exp-timeline{padding-left:26px}
   .exp-timeline::before{left:6px}
   .exp-item::before{left:-27px;top:30px}
   .exp-year{position:static;width:auto;text-align:left;margin:0 0 6px;font-size:15px}
+}
+/* Phones */
+@media (max-width:640px){
+  .site-header{position:static;padding:12px 16px;gap:8px}
+  .logo{font-size:20px}
+  nav{gap:6px 14px}
+  nav a{font-size:14px;padding:8px 2px;display:inline-block}
+  .nav-cta{padding:7px 12px}
+  main{padding:0 16px}
+  section[id]{scroll-margin-top:16px}
+  .profile-hero{padding:28px 0 4px}
+  .profile-main{gap:22px}
+  .hero-photo{max-width:300px;margin:0 auto;width:100%}
+  .profile-info .tagline{font-size:19px}
+  .credential-line{font-size:15px}
+  .quick-links{gap:8px 18px}
+  .quick-links a{padding:6px 0;display:inline-block}
+  .hero-actions .btn{flex:1 1 auto;text-align:center;padding:13px 14px}
+  .stats{gap:10px;margin:20px 0}
+  .stat{padding:13px}
+  .stat strong{font-size:25px}
+  .section{padding:38px 0}
+  .section.alt{padding:24px 16px;border-radius:16px}
+  h2{font-size:26px;margin-bottom:14px}
+  blockquote{font-size:15.5px;padding:12px 14px}
+  .card,.exp-card{padding:18px}
+  .exp-card.compact{padding:16px 18px}
+  .contact-grid{gap:12px}
+  .pub-title{font-size:15.5px}
+  footer{padding:22px 16px 32px}
 }
 @media (max-width:520px){.stats{grid-template-columns:1fr}}
